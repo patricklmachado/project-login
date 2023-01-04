@@ -98,6 +98,47 @@ telas grandes: acima de 1200px
         padding: 2px;
         margin: 5px 0;
     }
+}
 
+@media screen and (min-width: 1200px){
+    /* dispositivo DESKTOP */ 
+    body{
+        background-image: linear-gradient(to bottom, rgb(197, 2, 197), rgb(99, 0, 99));
+    }
 
+    section#login{
+        position: absolute;
+        background-color: white;
+        top: 50%;
+        left: 50%;
+        height: 320px;
+        width: 992px;
+        overflow: hidden;
+        border-radius: 10px;
+    
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.700);
+    
+        transform: translate(-50%, -50%);
+    }
+
+    section#login > div#imagem{
+        display: block;
+        float: left;
+        height: 100%;
+        width: 50%;
+        background: purple url(../imagens/pattern-build.jpg) no-repeat center left;
+        background-size: cover;
+    }
+
+    section#login > div#formulario{
+        display: block;
+        float: right;
+        height: 100%;
+        width: 46%;
+    }
+
+    section#login > div#formulario > p{
+        padding: 2px;
+        margin: 5px 0;
+    }
 }
