@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    height: 100vh;
+    background-color: purple;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login{
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    height: 530px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-attachment: fixed;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.700);
+
+    transform: translate(-50%, -50%);
+
+    transition: 0.3s ease;
+}
+
+section#login > div#imagem{
+    display: block;
+    height: 200px;
+    background: purple url(../imagens/pattern-build.jpg) no-repeat center left;
+    background-size: cover;
+}
+
+section#login > div#imagem > p{
+    text-align: justify;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: purple;
+    text-shadow: 1px 1px 2px white;
+}
+
+section#login > div#formulario{
+    padding: 10px;
+}
+
+section#login > div#formulario > h1{
+    text-align: center;
+}
+
+/* Configurações de Login e Senha */
+
+form > div.campo{
+    background-color: purple;
+    display: block;
+    margin-top: 5px;
+    height: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+div.campo > i{
+    background-color: purple;
+    color: white;
+    width: 40px;
+    padding: 4px;
+    font-size: 2em;
+}
+
+div.campo > input{
+    background-color: white;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 2px solid purple;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-10px);
+    text-indent: 5px;
+}
+
+div.campo > input:focus{
+    outline: none;
+}
+
+div.campo > label{
+    display: none;
+}
+
+
+
+div#formulario > p {
+    padding: 2px;
+    margin: 5px 0;
+    font-size: .8em;
+}
+
+div#formulario input[type=submit]{
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: purple;
+    color: white;
+}
+
+div#formulario input[type=submit]:hover{
+    background-color: rgba(128, 0, 128, 0.818);
+    cursor: pointer;
+}
+
+div#formulario input[type=reset]{
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+}
+
+div#formulario input[type=reset]:hover{
+    background-color: rgba(128, 0, 128, 0.523);
+    color: white;
+    cursor: pointer;
+}
+
+form > a.botao {
+    display: block;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    color: purple;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: .9em;
+    margin-top: -5px;
+}
+
+form > a.botao:hover{
+    text-decoration: underline;
+}
+
+form > a.botao > i{
+    font-size: .9em;
+}

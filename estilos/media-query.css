@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/*
+Typical Devices Breakpoints
+---------------------------
+telas pequenas: até 600px
+telefone: de 600px até 768px
+
+tablet: de 768px até 992px
+desktop: de 992px até 1200px
+telas grandes: acima de 1200px
+
+*/
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+   /* dispositivo TABLET */ 
+    body{
+        background-image: linear-gradient(to bottom, rgb(197, 2, 197), rgb(99, 0, 99));
+    }
+
+    section#login{
+        position: absolute;
+        background-color: white;
+        top: 50%;
+        left: 50%;
+        height: 320px;
+        width: 80vw;
+        overflow: hidden;
+        border-radius: 10px;
+    
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.700);
+    
+        transform: translate(-50%, -50%);
+    }
+
+    section#login > div#imagem{
+        display: block;
+        float: left;
+        height: 100%;
+        width: 50%;
+        background: purple url(../imagens/pattern-build.jpg) no-repeat center left;
+        background-size: cover;
+    }
+
+    section#login > div#formulario{
+        display: block;
+        float: right;
+        height: 100%;
+        width: 50%;
+    }
+
+    section#login > div#formulario > p{
+        padding: 2px;
+        margin: 5px 0;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    /* dispositivo DESKTOP */ 
+    body{
+        background-image: linear-gradient(to bottom, rgb(197, 2, 197), rgb(99, 0, 99));
+    }
+
+    section#login{
+        position: absolute;
+        background-color: white;
+        top: 50%;
+        left: 50%;
+        height: 320px;
+        width: 992px;
+        overflow: hidden;
+        border-radius: 10px;
+    
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.700);
+    
+        transform: translate(-50%, -50%);
+    }
+
+    section#login > div#imagem{
+        display: block;
+        float: left;
+        height: 100%;
+        width: 50%;
+        background: purple url(../imagens/pattern-build.jpg) no-repeat center left;
+        background-size: cover;
+    }
+
+    section#login > div#formulario{
+        display: block;
+        float: right;
+        height: 100%;
+        width: 46%;
+    }
+
+    section#login > div#formulario > p{
+        padding: 2px;
+        margin: 5px 0;
+    }
+
+
+}
